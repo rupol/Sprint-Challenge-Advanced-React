@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+
+import useLocalStorage from "./useLocalStorage";
 
 export default function useDarkMode() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
 
   useEffect(() => {
     const body = document.querySelector("body");

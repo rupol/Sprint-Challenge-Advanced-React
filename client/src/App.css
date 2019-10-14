@@ -155,6 +155,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  margin   : 20px;
 }
 
 h3 {
@@ -197,6 +198,15 @@ h3 {
 .dark {
   color           : white;
   background-color: black;
+}
+
+.chart-container {
+  width : 80%;
+  margin: 60px auto;
+}
+
+.chart {
+  margin: 0 auto;
 }
 
 .cards {
