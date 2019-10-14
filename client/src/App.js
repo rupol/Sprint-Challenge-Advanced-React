@@ -24,12 +24,17 @@ class App extends React.Component {
         this.setState({
           players: res.data
         });
-        console.log(res.data);
       })
       .catch(err => {
         console.log("error:", err);
       });
   };
+
+  componentWillUnmount() {
+    this.setState({
+      players: []
+    });
+  }
 
   render() {
     return (
