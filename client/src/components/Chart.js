@@ -1,20 +1,11 @@
 import React from "react";
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
 class Chart extends React.Component {
   render() {
     return (
       <div className="chart-container">
-        <h2>Top Women's Searches</h2>
+        <h2>Most Searched Players</h2>
         <BarChart
           className="chart"
           width={500}
@@ -31,7 +22,7 @@ class Chart extends React.Component {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="searches" fill="#f0ddff" />
+          <Bar dataKey="searches" fill="#ab91bf" />
         </BarChart>
       </div>
     );

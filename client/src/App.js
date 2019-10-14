@@ -27,7 +27,6 @@ class App extends React.Component {
           players: res.data,
           topPlayers: res.data.filter(player => player.searches > 10)
         });
-        console.log(res.data);
       })
       .catch(err => {
         console.log("error:", err);
@@ -37,7 +36,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {console.log(this.state.topPlayers)}
         <Nav />
         <Chart players={this.state.topPlayers} />
         <PlayerCards players={this.state.players} />

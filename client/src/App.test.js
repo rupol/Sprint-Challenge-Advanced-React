@@ -17,3 +17,9 @@ it("renders the dark mode button", () => {
   const element = wrapper.getByText(/dark mode/i);
   expect(element).toBeVisible();
 });
+
+it("renders the graph", () => {
+  const wrapper = rtl.render(<App />);
+  const element = wrapper.getByText(/most searched players/i);
+  expect(element).toBeVisible();
+});
