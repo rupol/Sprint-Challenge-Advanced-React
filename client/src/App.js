@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 
+import Nav from "./components/Nav";
 import PlayerCards from "./components/PlayerCards";
 
 class App extends React.Component {
@@ -33,7 +34,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Women's World Cup Trends</h1>
+        <Nav />
         <PlayerCards players={this.state.players} />
       </div>
     );
